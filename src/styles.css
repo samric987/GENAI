@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #1f1f2e;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.purple { background: linear-gradient(to right, #6a11cb, #2575fc); }
+.blue { background: linear-gradient(to right, #2193b0, #6dd5ed); }
+.green { background: linear-gradient(to right, #11998e, #38ef7d); }
+.red { background: linear-gradient(to right, #ff416c, #ff4b2b); }
+.yellow { background: linear-gradient(to right, #f7971e, #ffd200); }
+.orange { background: linear-gradient(to right, #f12711, #f5af19); }
+
+.chat-box {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.msg-user { text-align: right; color: blue; }
+.msg-ai { text-align: left; color: green; }
